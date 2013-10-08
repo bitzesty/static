@@ -90,3 +90,5 @@ after 'deploy:update_code', 'deploy:link_unicorn_conf'
 after 'deploy',             'deploy:cleanup'
 
 load 'deploy/assets'
+
+set :assets_prefix, 'static'
