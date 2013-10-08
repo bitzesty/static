@@ -9,6 +9,7 @@ gem 'capistrano-ext'
 gem 'aws-ses', :require => 'aws/ses' # Needed by exception_notification
 gem 'exception_notification'
 gem 'lograge', '~> 0.1.0'
+gem 'dotenv-rails'
 
 group :router do
   gem 'router-client', '2.0.3', :require => 'router/client'
