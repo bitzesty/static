@@ -5,7 +5,7 @@ set :default_environment, {
   'RAILS_ENV' => rails_env,
 }
 
-set :branch, 'master'
+set :branch, 'bis'
 set :domain_name, 'static.apps.bitzesty.com'
 
 server 'static.apps.bitzesty.com', :app, :web, primary: true
