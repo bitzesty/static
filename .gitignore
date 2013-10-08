@@ -4,3 +4,4 @@ log/*.log
 public/static/
 .idea
 .bundle
+certs/*
