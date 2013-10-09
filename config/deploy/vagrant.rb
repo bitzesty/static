@@ -23,7 +23,7 @@ set :scm, :git
 
 namespace :deploy do
   task :export, except: { no_release: true } do
-    run "cd #{current_path} && bundle exec foreman export upstart /home/#{user}/.init -a #{user} -f Procfile -u #{user} -l #{shared_path}/log -t config/deploy/templates"
+    run "cd #{current_path} && bundle exec foreman export upstart /home/#{user}/.init -a #{application} -f Procfile -u #{user} -l #{shared_path}/log -t config/deploy/templates"
   end
 
   task :start, except: { no_release: true } do
