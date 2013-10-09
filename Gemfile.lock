@@ -30,6 +30,9 @@ GEM
       i18n (= 0.6.1)
       multi_json (~> 1.0)
     addressable (2.3.2)
+    airbrake (3.1.14)
+      builder
+      json
     arel (3.0.2)
     aws-ses (0.4.4)
       builder
@@ -187,6 +190,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  airbrake
   aws-ses
   capistrano (< 3.0.0)
   capistrano-ext

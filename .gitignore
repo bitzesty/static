@@ -5,3 +5,4 @@ public/static/
 .idea
 .bundle
 certs/*.pem
+config/initializers/airbrake.rb

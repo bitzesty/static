@@ -68,6 +68,13 @@ namespace :deploy do
                  #{release_path}/config/unicorn.conf.rb"
   end
 
+  desc 'Link airbrake config'
+  task :link_airbrake_conf, roles: :app do
+    run "ln -nfs #{shared_path}/config/airbrake.rb \
+                 #{release_path}/config/initializers/airbrake.rb"
+  end
+
+
   desc "Nginx deploy introduction"
   task :nginx, roles: :app do
     puts <<-INTRODUCTION
@@ -86,6 +93,7 @@ end
 after 'deploy:setup',       'deploy:mkdir_config'
 
 after 'deploy:update_code', 'deploy:link_unicorn_conf'
+after 'deploy:update_code', 'deploy:link_airbrake_conf'
 
 after 'deploy',             'deploy:cleanup'
 
