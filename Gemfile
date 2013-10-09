@@ -11,6 +11,7 @@ gem 'exception_notification'
 gem 'lograge', '~> 0.1.0'
 gem 'dotenv-rails'
 gem 'airbrake'
+gem 'foreman'
 
 group :router do
   gem 'router-client', '2.0.3', :require => 'router/client'
