@@ -23,6 +23,8 @@ class RootController < ApplicationController
   def template
     if NON_LAYOUT_TEMPLATES.include?(params[:template])
       render :action => params[:template]
+    elsif params[:template] == 'bis'
+      render :action => params[:template], :layout => 'bis'
     else
       render :action => params[:template], :layout => 'govuk_template'
     end
