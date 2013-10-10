@@ -2,12 +2,12 @@ source 'https://rubygems.org'
 source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
 gem 'rails', '3.2.13'
+gem 'dotenv-rails'
 gem 'unicorn', '4.3.1'
 gem 'capistrano', '< 3.0.0'
 gem 'capistrano-ext'
 
 gem 'lograge', '~> 0.1.0'
-gem 'dotenv-rails'
 gem 'airbrake'
 gem 'foreman'
 
