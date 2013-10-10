@@ -6,8 +6,6 @@ gem 'unicorn', '4.3.1'
 gem 'capistrano', '< 3.0.0'
 gem 'capistrano-ext'
 
-gem 'aws-ses', :require => 'aws/ses' # Needed by exception_notification
-gem 'exception_notification'
 gem 'lograge', '~> 0.1.0'
 gem 'dotenv-rails'
 gem 'airbrake'
