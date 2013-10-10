@@ -1,3 +1,5 @@
+require 'dotenv/capistrano'
+
 server '10.0.100.11', :app, :web, primary: true
 
 ssh_options[:forward_agent] = true
@@ -55,5 +57,3 @@ end
 
 before 'deploy:restart', 'deploy:export'
 after 'deploy:update_code', 'unicorn:config'
-
-load 'dotenv/capistrano'
