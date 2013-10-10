@@ -55,3 +55,7 @@ end
 
 before 'deploy:restart', 'deploy:export'
 after 'deploy:update_code', 'unicorn:config'
+
+load 'deploy/assets'
+
+set :assets_prefix, 'static'

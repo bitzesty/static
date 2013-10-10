@@ -93,7 +93,7 @@ end
 after 'deploy:setup',       'deploy:mkdir_config'
 
 after 'deploy:update_code', 'deploy:link_unicorn_conf'
-after 'deploy:update_code', 'deploy:link_airbrake_conf'
+after 'deploy:update_code', 'deploy:link_airbraket_conf'
 
 after 'deploy',             'deploy:cleanup'
 
