@@ -13,7 +13,7 @@ set :bundle_flags, "--deployment --quiet --binstubs --shebang ruby-local-exec"
 set :application, 'static'
 set :user, 'bis'
 set :deploy_to, "/home/bis/#{application}"
-set :rails_env, 'production'
+set :rails_env, 'vagrant'
 set :branch, 'bis'
 set :use_sudo, false
 set :deploy_via, :remote_cache
