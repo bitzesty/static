@@ -1,3 +1,5 @@
+require 'singleton'
+
 class NotificationFileLookup
   include Singleton
 
