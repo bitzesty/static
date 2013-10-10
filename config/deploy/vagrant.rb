@@ -55,3 +55,5 @@ end
 
 before 'deploy:restart', 'deploy:export'
 after 'deploy:update_code', 'unicorn:config'
+
+load 'dotenv/capistrano'
