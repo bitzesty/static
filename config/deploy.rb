@@ -21,4 +21,4 @@ after 'deploy',             'deploy:cleanup'
 
 load 'deploy/assets'
 
-set :assets_prefix, 'static'
+# set :assets_prefix, 'static'
